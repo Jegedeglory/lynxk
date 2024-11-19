@@ -1,3 +1,12 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+
+
 .image{
     position: relative;
     height: 150px;
@@ -11,6 +20,7 @@ body{
     height: 100vh;
     display: flex;
     align-items: center;
+    justify-content: center;
     background-color: #f4f4f4;
 }
 .profile-card{
@@ -23,32 +33,34 @@ body{
     border-radius: 24px;
     padding: 25px;
     box-shadow: 0 5px 10px rgba(o, 0, 0, 0.1);
+    position: relative;
+    /* margin-inline: auto; */
 }
 
 
-.image.profile-img{
+.image .profile-img {
     height: 100%;
-    width: 100px;
+    width: 100%;
     object-fit: cover;
     border-radius: 50%;
     border: 3px solid #fff;
 }
-.profile-card.text-data{
+.profile-card .text-data{
     display: flex;
     flex-direction: column;
     align-items:center;
     color: #333;
 }
-.text-data.name{
+.text-data .name{
     font-size: 22px;
     font-weight: 500;
 }
-.text-data.job{
+.text-data .job{
     font-size: 15px;
     font-weight: 400;
 
 }
-.profile-card.media-button{
+.profile-card .media-button{
     display: flex;
     align-items: center;
     margin-top: 15px;
@@ -67,7 +79,7 @@ body{
     font-size: 18px;
 
 }
-.profile-card.button{
+.profile-card .buttons {
     display: flex;
     align-items: center;
     margin-top: 25px; 
@@ -79,7 +91,7 @@ body{
     color: #fff;
     border: none;
     border-radius: 24px;
-    margin:0 10px
+    margin:0 10px;
     padding: 8px 24px;
     background-color: #4070f4;
     transition: all 0.3s ease;
